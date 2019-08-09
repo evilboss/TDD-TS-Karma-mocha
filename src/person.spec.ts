@@ -23,10 +23,10 @@ describe('Person', () => {
 
     describe('Is from stockholm', () => {
         it('testperson should be from stockholm', () => {
-            expect(Person.isFromStockholm()).to.equal(true);
+            expect(Person.isFromStockholm()).to.equal('yes');
         });
         it('tesperson should not be from Stockholm', () => {
-            expect(Person.isFromStockholm()).to.equal(false);
+            expect(Person.isFromStockholm()).to.equal('no');
         })
     });
 

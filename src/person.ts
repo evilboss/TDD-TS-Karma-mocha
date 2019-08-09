@@ -52,8 +52,8 @@ export default class Person {
      * @return {Boolean} isFromStockholm
      */
 
-    public static isFromStockholm(): boolean {
-        return true;
+    public static isFromStockholm(): string {
+        return 'stockholm';
     };
 
     /**
