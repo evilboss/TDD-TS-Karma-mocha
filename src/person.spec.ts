@@ -13,10 +13,10 @@ describe('Person', () => {
 
     describe('Gender test', () => {
         it('should return male based on last four digits in id', () => {
-            expect(Person.getGender()).to.be('male');
+            expect(Person.getGender()).to.equal('male');
         });
         it('should return female base on last four digits in id', () => {
-            expect(Person.getGender()).to.be('female');
+            expect(Person.getGender()).to.equal('female');
         });
     });
 

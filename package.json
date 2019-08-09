@@ -1,5 +1,5 @@
 {
-  "name": "TDD trainer",
+  "name": "TDDtrainer",
   "version": "1.0.0",
   "description": "A training material used to practice TDD.",
   "main": "src/index.ts",
