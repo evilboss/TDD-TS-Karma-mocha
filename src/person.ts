@@ -48,12 +48,12 @@ export default class Person {
 
     /**
      * If the first two digits is below 13, that person is registered
-     * in the county of Stockholm
-     * @return {Boolean} isFromStockholm
+     * in the county of Stockholm return yes:
+     * @return {string} isFromStockholm
      */
 
     public static isFromStockholm(): string {
-        return 'stockholm';
+        return 'yes';
     };
 
     /**
