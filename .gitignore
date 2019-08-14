@@ -3,3 +3,5 @@ node_modules
 *.iml
 /package-lock.json
 /coverage/
+/src/*.js
+/src/*.js.map

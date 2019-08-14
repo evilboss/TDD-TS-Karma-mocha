@@ -17,7 +17,7 @@
   "author": "Jr Reyes",
   "email": "<jr.evilboss@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {k
     "@types/chai": "^4.0.4",
     "@types/mocha": "^2.2.44",
     "@types/sinon": "^2.3.7",
