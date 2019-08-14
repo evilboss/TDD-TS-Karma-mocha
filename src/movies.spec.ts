@@ -1,0 +1,1 @@
+import Movies from "./Movies";

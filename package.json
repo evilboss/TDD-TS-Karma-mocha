@@ -4,7 +4,7 @@
   "description": "A training material used to practice TDD.",
   "main": "src/index.ts",
   "scripts": {
-    "test": "node_modules/.bin/mocha --opts ./mocha.opts"
+    "test": "node_modules/.bin/karma start"
   },
   "keywords": [
     "mocha",
@@ -25,5 +25,15 @@
     "sinon-chai": "^2.14.0",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.1"
+  },
+  "devDependencies": {
+    "karma": "^4.2.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage-istanbul-reporter": "^2.1.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.2",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-typescript": "^4.1.1"
   }
 }
