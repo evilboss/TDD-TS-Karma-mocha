@@ -1,5 +1,4 @@
 import Movies from "./Movies";
-import Person from "./person";
 import Movie from "./movie";
 import {expect} from 'chai';
 
