@@ -1,9 +1,12 @@
 {
-  "name": "TDD trainer",
+  "name": "tdd_trainer",
   "version": "1.0.0",
   "description": "A training material used to practice TDD.",
   "main": "src/index.ts",
   "scripts": {
+    "start": "npm run dev",
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/employee.ts",
     "test": "node_modules/.bin/mocha --opts ./mocha.opts"
   },
   "keywords": [
@@ -24,6 +27,7 @@
     "sinon": "^4.1.1",
     "sinon-chai": "^2.14.0",
     "ts-node": "^3.3.0",
-    "typescript": "^2.6.1"
+    "ts-node-dev": "^1.0.0-pre.40",
+    "typescript": "^2.9.2"
   }
 }

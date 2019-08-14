@@ -3,25 +3,14 @@ export default class Person {
     id: string;
 
     /**
-     * Person Constructor
-     * @param {string} name       Name
-     * @param {string} id         ID-number
-     */
-    constructor(name: string, id: string) {
-        this.name = name;
-        this.id = id;
-    } ;
-
-
-    /**
      * Gets the second last digit in ID-number
      * @param  {string} id ID-number
      * @return {string}    second last digit
      */
 
-    public static getSecondLastDigit(id: any): number {
-        let myId = id;
-        return 1;
+    public getSecondLastDigit(id: any): number {
+        let myId = Number(id.charAt(id.length-2));
+        return myId;
     };
 
     /**
@@ -30,8 +19,9 @@ export default class Person {
      * @return {string}    Last two digits
      */
 
-    public static getFirstTwoDigits(id: any): number {
-        return 1;
+    public getFirstTwoDigits(id: any): number {
+        let num= Number(id.slice(0,2));
+        return num
     };
 
     /**
@@ -41,19 +31,29 @@ export default class Person {
      * @return {string} 'male' or 'female'
      */
 
-    public static getGender(): string {
+    public getGender(): string {
         let sex = '';
-        return sex;
+        let id= this.getSecondLastDigit(this.id);
+        if(id%2==0){
+            return "female"
+        }else{
+            return "male"
+        }
     };
 
     /**
-     * If the first two digits is below 13, that person is registered
+     * If the first two digits is below 75, that person is registered
      * in the county of Stockholm
      * @return {Boolean} isFromStockholm
      */
 
-    public static isFromStockholm(): boolean {
-        return true;
+    public isFromStockholm(): boolean {
+        let num= Number(this.id.slice(0,2));
+        if(num>75){
+            return true
+        }else{
+            return false
+        }
     };
 
     /**
@@ -66,11 +66,29 @@ export default class Person {
      * odd
      * @return {Boolean} isMale
      */
-    public static isMale(): boolean {
-        return true;
+    public isMale(): boolean {
+        if(this.getGender()=='male'){
+            return true
+        }else{
+            return false
+        }
     };
 
-    public static isFemale(): boolean {
-        return true;
+    public isFemale(): boolean {
+        if(this.getGender()=='female'){
+            return true
+        }else{
+            return false
+        }
     };
+
+      /**
+     * Person Constructor
+     * @param {string} name       Name
+     * @param {string} id         ID-number
+     */
+    constructor(name: string, id: string) {
+        this.name = name;
+        this.id = id;
+    } ;
 };
