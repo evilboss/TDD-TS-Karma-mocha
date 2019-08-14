@@ -7,7 +7,7 @@
     "test": "node_modules/.bin/karma start",
     "start": "npm run dev",
     "tsc": "tsc",
-    "dev": "ts-node-dev --respawn --transpileOnly ./src/employee.ts"
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/cinema.ts"
   },
   "keywords": [
     "mocha",
@@ -17,7 +17,7 @@
   "author": "Jr Reyes",
   "email": "<jr.evilboss@gmail.com>",
   "license": "MIT",
-  "dependencies": {k
+  "dependencies": {
     "@types/chai": "^4.0.4",
     "@types/mocha": "^2.2.44",
     "@types/sinon": "^2.3.7",

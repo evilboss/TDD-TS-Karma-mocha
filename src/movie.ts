@@ -8,7 +8,7 @@ export default class Movie {
     }
 
     private getTitle(): string {
-        return this._rating;
+        return this._title;
     }
 
     private getRating(): string {
