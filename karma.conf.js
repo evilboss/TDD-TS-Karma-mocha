@@ -14,7 +14,6 @@ module.exports = function (config) {
             require('karma-chrome-launcher'),
             require('karma-jasmine-html-reporter'),
             require('karma-typescript')
-
         ],
         client: {
             clearContext: true // leave Jasmine Spec Runner output visible in browser
