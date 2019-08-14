@@ -1,4 +1,32 @@
 export default class Movie {
-    constructor(title) {
+    private _title: string;
+    private _rating: string;
+
+
+    private setTitle(title: string) {
+        this._title = title;
     }
+
+    private getTitle(): string {
+        return this._rating;
+    }
+
+    private getRating(): string {
+        return this._rating;
+    }
+
+    public setRating(value: string) {
+        this._rating = value;
+    }
+
+    public getMovie(): any {
+        return {title: this.getTitle(), rating: this.getRating()}
+    }
+
+    constructor(title, rating) {
+        this.setTitle(title);
+        this.setRating(rating);
+    }
+
+
 }
