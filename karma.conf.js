@@ -8,8 +8,6 @@ module.exports = function (config) {
         files: [
             'src/**/*.ts',
         ],
-
-
         plugins: [
             require('karma-jasmine'),
             require('karma-mocha-reporter'),
