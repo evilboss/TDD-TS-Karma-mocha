@@ -1,6 +1,5 @@
 import Person from "./person";
 import {expect} from 'chai';
-import {add} from './example-code';
 
 describe('Person', () => {
     let male;
@@ -13,10 +12,10 @@ describe('Person', () => {
 
     describe('Gender test', () => {
         it('should return male based on last four digits in id', () => {
-            expect(male.getGender()).to.be('male');
+            expect(male.getGender()).equal('male');
         });
         it('should return female base on last four digits in id', () => {
-            expect(female.getGender()).to.be('female');
+            expect(female.getGender()).equal('female');
         });
     });
 
